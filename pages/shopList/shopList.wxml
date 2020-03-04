@@ -1,0 +1,16 @@
+<view class="shop" wx:for="{{ shopList }}" wx:key="id">
+    <image class="shop-image" src="{{ item.images[0] }}" mode="aspectFit"></image>
+    <view class="shop-info">
+        <text class="shop-title ell">{{ item.name }}</text>
+        <text class="shop-tel ell">联系电话：{{ item.phone }}</text>
+        <text class="shop-address ell">地址：{{ item.address }}</text>
+        <text class="shop-time ell">营业时间：{{ item.businessHours }}</text>
+    </view>
+    <view class="shop-star">
+        <view class="star-after">★★★★★</view>
+        <view class="star-before" style="width: {{ item.score }}%">★★★★★</view>
+    </view>
+</view>
+
+<view class="loadmore loading" wx:if="{{ onload }}">正在加载...</view>
+<view class="noData" wx:if="{{ !onload && shopList.length === 0 || isAll }}">没有更多数据</view>

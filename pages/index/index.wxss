@@ -1,0 +1,49 @@
+/* 轮播图 */
+.slider,
+.slider swiper,
+.slider, .slider image{
+  width: 100%;
+  height: 395rpx;
+}
+/* 导航 */
+.index-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-nav .nav-item {
+  width: 33.3333%;
+  height: 200rpx;
+  border-bottom: 1rpx solid rgba(204, 204, 204, .5);
+  /* 字体字号大小约定用官方推荐px */
+  font-size: 16px;
+  box-sizing: border-box;
+  display: flex;
+  /* 方向垂直 */
+  flex-direction: column;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+}
+.index-nav .nav-item:nth-child(3n)::after {
+  width: 0;
+}
+.index-nav image{
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 首页入口 */
+.index-enter {
+  padding: 20rpx;
+  display: flex;
+}
+.index-enter .enter-item {
+  width: 50%;
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+}
+.index-enter image {
+  width: 320rpx;
+  height: 178rpx;
+}

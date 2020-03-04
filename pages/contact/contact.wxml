@@ -1,0 +1,62 @@
+<view class="divider"></view>
+<view class="cell bgw">
+    <navigator class="cell-item">
+        <input type="text" placeholder="text"></input>
+    </navigator>
+    <navigator class="cell-item">
+        <input type="number" placeholder="number"></input>
+    </navigator>
+    <navigator class="cell-item">
+        <input type="idcard" placeholder="idcard"></input>
+    </navigator>
+    <navigator class="cell-item">
+        <input type="digit" placeholder="digit"></input>
+    </navigator>
+</view>
+
+<view class="divider"></view>
+<view class="cell bgw">
+    <navigator class="cell-item">
+        <radio-group bindchange="radioChangeHandle" data-gard="1">
+            <radio color="#F60" value="cn" checked>中文</radio>
+            <radio color="#F60" value="en">英文</radio>
+            <radio color="#F60" value="sx" disabled>智障</radio>
+        </radio-group>
+    </navigator>
+    <navigator class="cell-item">
+        <radio-group bindchange="checkboxChangeHandle" data-gard="222">
+            <checkbox color="#F60" value="cn" checked>中文</checkbox>
+            <checkbox color="#F60" value="en">英文</checkbox>
+            <checkbox color="#F60" value="sx" disabled>智障</checkbox>
+        </radio-group>
+    </navigator>
+    <navigator class="cell-item">
+        <switch></switch>
+    </navigator>
+</view>
+
+<view class="divider"></view>
+<view class="cell bgw">
+    <view class="cell-item">微信小程序事件</view>
+
+    <view class="father" bindtap="fatherTapHandle">
+        父级
+        <view class="son" catchtap="sonTapHandle1" data-index="1">子级1</view>
+        <view class="son" bindtap="sonTapHandle2" data-inde="2">子级2</view>
+    </view>
+
+</view>
+
+
+
+
+
+<wxs module="foo">
+    var sum = function(a,b) {
+        return a+b;
+    }
+    //wxs到出一个对象，供当前页面使用
+    module.exports = sum;
+</wxs>
+
+<view>{{ foo(1,2) }}</view>

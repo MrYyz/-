@@ -1,0 +1,13 @@
+/* 头像 */
+.avatar {
+    background-color: #F60;
+    height: 400rpx;
+}
+.avatar image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 10rpx solid rgba(0, 0, 0, .2)
+}
+/*  */
+    

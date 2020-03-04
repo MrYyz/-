@@ -1,0 +1,15 @@
+<view class="card bgw">
+    <text class="card-title">标题111</text>
+    <text class="card-date">2020-03-03</text>
+    <image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/106503/19/13497/81173/5e59ab9fEac5c19df/f964c4b917e5a4ec.jpg!cr_1125x445_0_171!q70.jpg.dpg" class="card-image" mode="aspectFill" lazy-load></image>
+    <text class="card-desc">越努力，越幸福~</text>
+    <text class="card-read arrow">查看详情</text>
+</view>
+
+<view class="card bgw">
+    <text class="card-title">标题111</text>
+    <text class="card-date">2020-03-03</text>
+    <image src="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/106503/19/13497/81173/5e59ab9fEac5c19df/f964c4b917e5a4ec.jpg!cr_1125x445_0_171!q70.jpg.dpg" class="card-image" mode="aspectFill" lazy-load></image>
+    <text class="card-desc">越努力，越幸福~</text>
+    <text class="card-read arrow">查看详情</text>
+</view>
